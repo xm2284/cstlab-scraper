@@ -1,0 +1,26 @@
+{
+  "name": "cstlab-scraper",
+  "version": "1.0.0",
+  "description": "导出希冀平台整份作业的题目到 Markdown / CSV，供复习与提问 AI 使用",
+  "type": "commonjs",
+  "bin": {
+    "cstlab-scraper": "scrape.mjs"
+  },
+  "scripts": {
+    "login": "node scrape.mjs --login",
+    "scrape": "node scrape.mjs",
+    "export-all": "node scrape.mjs --all"
+  },
+  "keywords": [
+    "cstlab",
+    "xiji",
+    "scraper",
+    "homework",
+    "markdown",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}

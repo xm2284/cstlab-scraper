@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "CG 题目导出",
+  "version": "1.4.0",
+  "description": "导出希冀平台的作业题目为 Markdown / CSV",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "导出题目",
+    "default_popup": "popup.html"
+  }
+}
