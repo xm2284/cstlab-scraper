@@ -147,6 +147,7 @@ npm run export-all
 | `--course <id>` | 指定课程 ID，跳过自动探测 | 自动 |
 | `OUT_ROOT` | 批量模式输出根目录 | `题库` |
 | `PROBE_ONLY=1` | 跳过索引页，只走直连题目页探测 | 关 |
+| `SAVE_IMAGES=0` | 不下载题目图片（默认会存到本地 `图片/`） | 下载 |
 | `HEADLESS=0` | 显示浏览器窗口（排查问题时用） | 无头 |
 | `ORIGIN` | 平台地址（也可用 `--origin=` 或 `config.json`） | 自动记住 |
 | `EDGE_PATH` | 自定义 Edge 路径 | 自动探测 |
@@ -194,6 +195,19 @@ npm run export-all
     ├── popup.html
     ├── popup.js
     └── scrape.js
+```
+
+导出的题库长这样，**图片存在本地，离线也能看**：
+
+```
+题库/174_xxx/
+├── 题目_8690.md
+├── 题目_8690.csv
+├── 题目_8720.md
+├── 题目_8720.csv
+└── 图片/
+    ├── 8690_1.png
+    └── 8720_1.png
 ```
 
 ## 隐私
